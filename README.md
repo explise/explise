@@ -2,7 +2,7 @@
 
 I'm a software engineer who likes building infrastructure that's **fast, cheap to run, and honest about its trade-offs** — mostly **Rust**, distributed systems, and observability done right: storage you own, costs you can see, no vendor lock-in.
 
-You'll usually find me somewhere inside a query engine or a storage tier. My main account is **[@anurag-bhatt1](https://github.com/anurag-bhatt1)**.
+You'll usually find me somewhere inside a query engine or a storage tier.
 
 ### 🌿 Currently building — Verdigris
 
