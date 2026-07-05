@@ -1,55 +1,25 @@
-### Hi, I'm Anurag 👋
+## Hi, I'm Anurag 👋
 
-I'm a software engineer who likes building infrastructure that's **fast, cheap to run, and honest about its trade-offs** — mostly **Rust**, distributed systems, and observability done the way it should be: storage you own, costs you can see, no vendor lock-in.
+I'm a software engineer who likes building infrastructure that's **fast, cheap to run, and honest about its trade-offs** — mostly **Rust**, distributed systems, and observability done right: storage you own, costs you can see, no vendor lock-in.
 
-You'll usually find me somewhere inside a query engine or a storage tier. 
+You'll usually find me somewhere inside a query engine or a storage tier. My main account is **[@anurag-bhatt1](https://github.com/anurag-bhatt1)**.
 
-Right now, I'm building 👇
+### 🌿 Currently building — Verdigris
 
----
+> *The layer your infrastructure leaves behind.*
 
-<h1 align="center">Verdigris</h1>
-<p align="center"><em>The layer your infrastructure leaves behind.</em></p>
+[![Docs](https://img.shields.io/badge/docs-verdigris-2E8E7F?style=flat-square)](https://explise.github.io/verdigris-docs/) &nbsp;![Rust](https://img.shields.io/badge/built%20with-Rust-B06A3B?style=flat-square) &nbsp;![Engine](https://img.shields.io/badge/query-Apache%20DataFusion-184F47?style=flat-square) &nbsp;![License](https://img.shields.io/badge/license-Apache--2.0-5C9A7A?style=flat-square)
 
-<p align="center">
-  <a href="https://explise.github.io/verdigris-docs/"><img alt="Docs" src="https://img.shields.io/badge/docs-verdigris-2E8E7F?style=flat-square"></a>
-  <img alt="Built with Rust" src="https://img.shields.io/badge/built%20with-Rust-B06A3B?style=flat-square">
-  <img alt="Engine" src="https://img.shields.io/badge/query-Apache%20DataFusion-184F47?style=flat-square">
-  <img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-5C9A7A?style=flat-square">
-</p>
+A plug-and-play, **S3-native log storage & query engine** in Rust — a self-hostable log platform that keeps your log data in **your own cloud account**. Deploy it on EKS, point your existing **Vector / Fluent Bit / OpenTelemetry** pipeline at it, and query logs **in place** as Parquet in your own S3 bucket. No vendor cloud in the path, no rehydration toll, no proprietary query language.
 
-**Verdigris** is a plug-and-play, **S3-native log storage & query engine** written in Rust — a self-hostable log platform that keeps your log data in **your own cloud account**. Deploy it into your EKS cluster, point your existing **Vector / Fluent Bit / OpenTelemetry** pipeline at it, and query logs **in place** as Parquet in your own S3 bucket. No vendor cloud in the path, no rehydration toll, no proprietary query language.
+**What makes it different**
 
-### Why it's different
+- **Data sovereignty** — logs never leave your AWS account; no per-GB ingestion margin.
+- **No rehydration tax** — queries read Parquet straight from S3; cold logs stay live, you pay compute only when you query.
+- **Storage cheap, compute provisioned** — priced by bytes in S3; query speed is a dial. Severity sets *placement*, never *price*.
+- **Cost made legible** — a pre-query estimate before any Glacier scan, so no surprise bills.
+- **One `helm install`, done** — a single binary + Helm chart on EKS + S3, via IRSA (no static keys).
 
-- 🟩 **Data sovereignty** — logs never leave your AWS account; no per-GB ingestion margin on every byte.
-- 🟩 **No rehydration tax** — queries read Parquet straight out of S3, in place. Cold logs are always live — you pay compute only when you actually query.
-- 🟩 **Storage cheap, compute provisioned** — priced by bytes in S3; query speed is a dial you turn. Severity decides *placement*, never *price*.
-- 🟩 **Cost made legible** — a pre-query estimator tells you *"this scans ~X GB from Glacier, ~$Y — continue?"* before you run it.
-- 🟩 **One `helm install`, done** — a single binary + Helm chart brings it up on EKS + S3, writing to your bucket via IRSA (no static keys).
+Native OTLP + Vector/Fluent Bit ingest · SQL + a search DSL over Apache DataFusion · severity tiering with S3 lifecycle · small-file compaction · a cost estimator · continuous alerting · an Arrow-native web UI.
 
-### How it works
-
-```
-   pods on EKS
-       │  (stdout/stderr · OTLP)
-       ▼
-   Vector / Fluent Bit / OTel Collector      ← ingest what your apps already emit
-       │
-       ▼
-   Verdigris ingest ──►  Parquet + catalog in YOUR S3 bucket
-       │                      hot → warm → cold, aged by S3 lifecycle
-       ▼
-   Verdigris query engine (Apache DataFusion)  ← query in place, no rehydration
-       │
-       ▼
-   SQL + search DSL  ·  Web UI  ·  Grafana  ·  continuous alerting
-```
-
-### What's inside
-
-Native **OTLP** + Vector/Fluent Bit ingest · **SQL** and a concise search DSL over Apache DataFusion · severity-based **tiering** with S3 lifecycle · small-file **compaction** · a pre-query **cost estimator** · continuous **alerting** · an Arrow-native web UI · one-command **Helm** deploy.
-
-<p align="center">
-  <b><a href="https://explise.github.io/verdigris-docs/">📖 Read the docs →</a></b>
-</p>
+**[📖 Read the docs →](https://explise.github.io/verdigris-docs/)**
