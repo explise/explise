@@ -1,3 +1,13 @@
+### Hi, I'm Anurag 👋
+
+I'm a software engineer who likes building infrastructure that's **fast, cheap to run, and honest about its trade-offs** — mostly **Rust**, distributed systems, and observability done the way it should be: storage you own, costs you can see, no vendor lock-in.
+
+You'll usually find me somewhere inside a query engine or a storage tier. My main account is **[@anurag-bhatt1](https://github.com/anurag-bhatt1)**.
+
+Right now, I'm building 👇
+
+---
+
 <h1 align="center">Verdigris</h1>
 <p align="center"><em>The layer your infrastructure leaves behind.</em></p>
 
