@@ -1,6 +1,6 @@
 ## Hi, I'm Anurag 👋
 
-I'm a software engineer who likes building infrastructure that's **fast, cheap to run, and honest about its trade-offs** — mostly **Rust**, distributed systems, and observability done right: storage you own, costs you can see, no vendor lock-in.
+I'm a software engineer who likes building infrastructure that's **fast, cheap to run, and honest about its trade-offs** mostly **Rust**, distributed systems, and observability done right: storage you own, costs you can see, no vendor lock-in.
 
 You'll usually find me somewhere inside a query engine or a storage tier.
 
