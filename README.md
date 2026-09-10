@@ -1,11 +1,12 @@
-# Hi, I'm Anurag 👋
+# Hi, I'm Anurag
 
-Software engineer focused on **competitive programming** and **systems**. I like problems that are fast, correct, and clean to read — and I have little patience for bugs.
+Software engineer focused on competitive programming and systems. I like problems that are fast, correct, and clean to read, and I have little patience for bugs.
 
 ## Competitive Programming
-- [Codeforces](https://codeforces.com/profile/\_Anurag) — `_Anurag`
-- [CodeChef](https://codechef.com/users/anurag-bhatt) — `anurag-bhatt`
-- [AtCoder](https://atcoder.jp/users/anuragbhatt) — `anuragbhatt`
+
+[![Codeforces](https://img.shields.io/badge/Codeforces-_Anurag-1F8ACB?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/_Anurag)
+[![CodeChef](https://img.shields.io/badge/CodeChef-anurag--bhatt-5B4638?style=flat-square&logo=codechef&logoColor=white)](https://codechef.com/users/anurag-bhatt)
+[![AtCoder](https://img.shields.io/badge/AtCoder-anuragbhatt-222222?style=flat-square&logo=atcoder&logoColor=white)](https://atcoder.jp/users/anuragbhatt)
 
 ## Languages and Tools
 
