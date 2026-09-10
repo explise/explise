@@ -21,10 +21,10 @@ Software engineer focused on competitive programming and systems. I like problem
 <br/>
 <br/>
 
-![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=explise&theme=radical&show_icons=true&count_private=true&include_all_commits=true)
+## GitHub Stats
 
-<hr>
+![Profile summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=explise&theme=github_dark)
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=explise&theme=dark" />
+![GitHub Streak](https://streak-stats.demolab.com/?user=explise&theme=dark)
 
 <p align="center">Thanks for stopping by.</p>
